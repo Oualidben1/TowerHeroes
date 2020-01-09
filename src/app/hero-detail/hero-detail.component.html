@@ -1,6 +1,6 @@
-<div *ngIf="hero">
+<!-- <div *ngIf="hero">
     <h2>{{hero.name | uppercase}} Details</h2>
-    <div><span>attak: </span>{{hero.attak}}</div>
+    <div><span>asttak: </span>{{hero.attak}}</div>
     <div><span>rank: </span>{{hero.rank}}</div>
     <div><span>id: </span>{{hero.id}}</div>
    <img src="" alt="">
@@ -8,10 +8,8 @@
       <label>name:
         <input [(ngModel)]="hero.name" placeholder="name"/>
       </label>
-      <!-- <label>
-        <img src="assets/img/Ichigo.png">
-      </label> -->
+      <div><img src="../assets/img/{{hero.id}}.jpg" alt="Example" width="193" height="193" ></div>
     </div>
     <button (click)="goBack()">go back</button>
     <button (click)="save()">save</button>
-  </div>
+  </div> -->
