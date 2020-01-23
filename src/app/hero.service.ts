@@ -71,16 +71,6 @@ export class HeroService {
 // la recherche par rank ce fait exclusivement si on déclare dans le return rank car il va récuperer les données dans hero.ts ///
 // Mais il est possible de créer deux recherche séparé dans le dashboard de la même manière que dans la catégorie héro //
 
-  // searchRanks(term: string): Observable<Hero[]> {
-  //   if (!term.trim()) { 
-  //     return of([]);
-  //   }
-  //   return this.http.get<Hero[]>(`${this.heroesUrl}/?rank=${term}`).pipe(
-  //     tap(_ => this.log(`found heroes matching "${term}"`)),
-  //     catchError(this.handleError<Hero[]>('searchRanks', []))
-  //   );
-  // }
-
   //////// Save methods //////////
 
   /** POST: add a new hero to the server */
